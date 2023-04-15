@@ -1,0 +1,64 @@
+
+
+
+
+
+.accordion-item {
+    border: 0;
+}
+
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+    background-image: url("../images-main/chevron-down.svg");
+}
+
+#accordion h2::after {
+    content: url("../images-main/chevron-down.svg");
+    position: absolute;
+    right: 20px;
+
+}
+
+
+span.ui-accordion-header-icon {
+    display: none;
+}
+
+.image:first-child, .image:last-child {
+    background-position: center;
+    background-size: cover;
+    padding: 192px 120px;
+}
+
+
+.image:nth-child(2) {
+    background-position: center;
+    background-size: cover;
+    padding: 35px 85px 35px 122px;
+
+}
+
+.sliderFirst {
+    position: relative;
+    z-index: 100;
+}
+
+.slick-prev {
+    z-index: 900;
+
+}
+
+.slick-prev::before {
+    content: url("../images-main/arrow-left-circle.svg");
+    position: absolute;
+    left: 50px;
+    top: -130%;
+}
+
+.slick-next::after {
+    content: url("../images-main/arrow-right-circle.svg");
+    position: absolute;
+    right: 70px;
+    top: -130%;
+}
+
